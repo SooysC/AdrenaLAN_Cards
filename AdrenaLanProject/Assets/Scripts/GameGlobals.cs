@@ -17,4 +17,5 @@ public static class GameGlobals {
 		Attack_Map.Add("Bear", new string[] {"Sphinx", "Fox"});
 		Attack_Map.Add("Squirrel", new string[] {"Desert", "Farmer"});
 	}
+	public static bool gameboardTriggered = false;
 }
