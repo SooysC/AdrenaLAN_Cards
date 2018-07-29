@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="fox_inactive" size="1.000000 1.562165" />
+    <ImageTarget name="boar_active" size="1.000000 1.246475" />
+    <ImageTarget name="squirrel_inactive" size="1.000000 1.819770" />
+    <ImageTarget name="deer_inactive" size="1.000000 1.468825" />
+    <ImageTarget name="boar_inactive" size="1.000000 1.565479" />
+    <ImageTarget name="farmer_inactive" size="1.000000 1.566017" />
+    <ImageTarget name="bear_inactive" size="1.000000 1.373079" />
+    <ImageTarget name="hare_active" size="1.000000 1.194137" />
+    <ImageTarget name="fox_active" size="1.000000 1.218269" />
+    <ImageTarget name="squirrel_active" size="1.000000 1.196303" />
+    <ImageTarget name="bear_active" size="1.000000 1.207139" />
+    <ImageTarget name="deer_active" size="1.000000 1.266087" />
+    <ImageTarget name="farmer_active" size="1.000000 1.189300" />
+    <ImageTarget name="wolf_inactive" size="1.000000 1.117904" />
+    <ImageTarget name="wolf_active" size="1.000000 1.198213" />
+    <ImageTarget name="hare_inactive" size="1.000000 1.005242" />
     <ImageTarget name="Gameboard_3" size="1.000000 0.697767" />
+    <ImageTarget name="Gameboard_1" size="1.000000 1.377428" />
+    <ImageTarget name="Gameboard" size="2.000000 2.743725" />
   </Tracking>
 </QCARConfig>

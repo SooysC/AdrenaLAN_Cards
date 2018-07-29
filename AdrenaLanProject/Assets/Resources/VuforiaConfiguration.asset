@@ -16,11 +16,11 @@ MonoBehaviour:
     ufoLicenseKey: QVJrQys1bi8vLy8vQUFBQUtQc1JEM0xtbVVZVWt0cmRKWWgzangwZXQrZHE0N0hiMHRZTGc4dUJ4emN3WVNpUWRvMGNHQktiSXRYVlpHUGVTdGJhZDFIYXVVdzRkc1JvZmFRc1paMDdsQVQ3V0p6VkJjOTd3UmNmeEhsRzFNNCtiVWVMb3I0TDhhU0hkcStkSGQ1OXIyWFJnZmEwMGN2U2RCc0h6SmxDQTR5R2VOejZoQ2pRVkVodjk0czcwU3dpdDNlK2U5S1hoOFJDOGdVbktlQk9LTWtHMmU3ejFEM0V0VWZUY1VENHNhQU1kMHk3cVQzZXFsSlI0NStxU21nYllNQ2puRHZsREhwWEo4aXFuUnZiY2wySld4ejZwRjVFY2U2UE9PdTBiaTRLSEpuYVlzWVV0ZTUyY3BnM3VTaHMwM3JFam5CenFMUTdRMGJtajlVZVRyaXF0bTArUVlyWmtuTkZTRGxSRmVSSGJtV3BRR3NOZklCd1I2RDQ=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
-    maxSimultaneousImageTargets: 1
-    maxSimultaneousObjectTargets: 1
-    useDelayedLoadingObjectTargets: 0
+    maxSimultaneousImageTargets: 17
+    maxSimultaneousObjectTargets: 17
+    useDelayedLoadingObjectTargets: 1
     cameraDirection: 0
-    mirrorVideoBackground: 0
+    mirrorVideoBackground: 2
   digitalEyewear:
     cameraOffset: 0.06
     distortionRenderingLayer: 31

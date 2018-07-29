@@ -11,6 +11,7 @@ public class PlayerBehaviour : MonoBehaviour {
 	public GameObject ActionManager;
 	private List<GameObject> played_cards;
 	private List<int> health;
+	private GameObject buidling;
 
 	void Awake () {
 		played_cards = new List<GameObject>();
@@ -19,10 +20,11 @@ public class PlayerBehaviour : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetMouseButtonDown(0)) {
-			StartCoroutine(Charge(played_cards[0]));
-			StartCoroutine(Charge(played_cards[1]));
-		}
+
+	}
+
+	public void isPlayerDead () {
+
 	}
 
 	private void playCard () {

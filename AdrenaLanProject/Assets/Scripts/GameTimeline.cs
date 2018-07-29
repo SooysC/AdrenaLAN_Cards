@@ -60,15 +60,26 @@ public class GameTimeline : MonoBehaviour {
 				//current_state = Game_State.player_a_phase;
 				break;
 			case Game_State.player_a_phase:
+                //if (playera_dead > 0) {
+                //  play cards and attack
+                //  animation will play
+                //} else
+                //  start animation of death of player and finish game
 				current_state = Game_State.player_b_phase;
 				break;
 			case Game_State.player_b_phase:
-				// For now we'll make the game one round only
-				current_state = Game_State.game_over;
+                //if (playerb_dead > 0) {
+                //  play cards and attack
+                //  animation will play
+                //} else
+                //  start animation of death of player and finish game
+
+                // For now we'll make the game one round only
+                current_state = Game_State.game_over;
 				break;
-			case Game_State.game_over:
-				current_state = Game_State.game_over;
-				break;
+            //case Game_state.player_end_game:
+            //  display end of game animation
+            //  display start screen to start game again
 			default:
 				Debug.Log("Should not go here.");
 				break;
