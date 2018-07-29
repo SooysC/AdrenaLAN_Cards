@@ -16,11 +16,13 @@ public class GameTimeline : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		GameGlobals.done;
-	}
+	void Update ()
+    {
+    }
 
-	public void nextState () {
+  
+
+    public void nextState () {
 		switch (current_state) {
 			case Game_State.game_setup:
 				current_state = Game_State.game_start;
