@@ -12,12 +12,16 @@ public class GameTimeline : MonoBehaviour {
 	public Game_State current_state = Game_State.game_setup;
 
 	// Use this for initialization
+	void Awake () {
+		GameGlobals.createGameActions();
+	}
+
 	void Start () {
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		GameGlobals.done;
+		GameGlobals.done = false;
 	}
 
 	public void nextState () {
@@ -35,7 +39,9 @@ public class GameTimeline : MonoBehaviour {
 				// For now we'll make the game one round only
 				current_state = Game_State.game_over;
 				break;
-
+			case Game_State.game_over:
+				current_state = Game_State.game_over;
+				break;
 			default:
 				Debug.Log("Should not go here.");
 				break;

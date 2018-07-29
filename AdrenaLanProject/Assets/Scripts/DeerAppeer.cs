@@ -4,41 +4,58 @@ using UnityEngine;
 
 public class DeerAppeer : MonoBehaviour {
 
-	public GameObject[] Homes;
-    public int Target_Destination;
-	public GameObject Deer;
+	private GameObject target;
+	private GameObject beast;
 	public GameObject board;
-    public bool run = false;
-	private bool set = false;
+	public Vector3 prevpos;
+	public bool attack = false;
+	public string piece = "";
+	public Queue<GameObject> toOrder;
+	public Queue<GameObject> toAttack;
+	public Queue<Vector3> prevPos;
 
-	void Start () {        
-    	StartCoroutine(generateDeer());
+	void Start () {    
+		toAttack = new Queue<GameObject>();    
+		toOrder = new Queue<GameObject>();
+		prevPos = new Queue<Vector3>();
     }
 	
 	// Update is called once per frame
 	void Update () {
-        if (set) {
-            GoIntoHouse();
+        if (attack) {
+            Attack();
         }
     }
 
-	public void GoIntoHouse () {
-		GameObject d = GameObject.Find("Deer(Clone)");
-		Vector3 path = Homes[Target_Destination].transform.position - d.transform.position;
-        d.GetComponent<Rigidbody>().velocity = Vector3.Lerp(d.GetComponent<Rigidbody>().velocity, path, 0.1f);
-        Quaternion targetRotation = Quaternion.LookRotation(path);
-        d.transform.rotation = Quaternion.Lerp(d.transform.rotation, targetRotation, 0.2f);
+	public GameObject callBeast (string name) {
+		// possibly animate the beast onto the scene
+		Debug.Log("ROR");
+		GameObject res = Resources.Load<GameObject>("Animal/" + name);
+		Instantiate(res, board.transform);
+		return GameObject.Find(name + "(Clone)");
+	}
 
-		if (path.magnitude <= 0.001){
-			//set = false;
-			//Destroy(GameObject.Find("Deer"));
+	public void Attack () {
+		beast = toOrder.Peek();
+		target = toAttack.Peek();
+		Vector3 path = target.transform.position - beast.transform.position;
+        beast.GetComponent<Rigidbody>().velocity = Vector3.Lerp(beast.GetComponent<Rigidbody>().velocity, path, 0.1f);
+        Quaternion targetRotation = Quaternion.LookRotation(path);
+        beast.transform.rotation = Quaternion.Lerp(beast.transform.rotation, targetRotation, 0.2f);
+
+		if (path.magnitude <= 0.1){
+			beast.transform.position = prevPos.Dequeue();
+			toOrder.Dequeue();
+			toAttack.Dequeue();
+			attack = toAttack.Count != 0;
+			Debug.Log("Too close for comfort");
 		}
 	}
 
-    public IEnumerator generateDeer() {
-        yield return new WaitUntil(() => run);
-		Instantiate(Deer, board.transform);
-		yield return new WaitForSeconds(3f);
-		set = true;
-    }
+	public void setupAttack (GameObject beast_, GameObject target_) {
+		toOrder.Enqueue(beast_);
+		toAttack.Enqueue(target_);
+		prevPos.Enqueue(beast_.transform.position);
+		attack = true;
+	}
 }
