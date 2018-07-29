@@ -35,9 +35,7 @@ public class GameTimeline : MonoBehaviour {
 				// For now we'll make the game one round only
 				current_state = Game_State.game_over;
 				break;
-			case Game_State.game_over:
-				current_state = Game_State.game_over;
-				break;
+
 			default:
 				Debug.Log("Should not go here.");
 				break;
