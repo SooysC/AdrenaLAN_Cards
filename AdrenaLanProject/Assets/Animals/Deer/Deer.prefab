@@ -145,6 +145,7 @@ GameObject:
   m_Component:
   - component: {fileID: 462464}
   - component: {fileID: 9552978}
+  - component: {fileID: 114311003796402196}
   m_Layer: 0
   m_Name: Deer
   m_TagString: Untagged
@@ -944,3 +945,35 @@ Prefab:
   m_SourcePrefab: {fileID: 0}
   m_RootGameObject: {fileID: 139118}
   m_IsPrefabAsset: 1
+--- !u!114 &114311003796402196
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 139118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 124
+    i1: 42
+    i2: 5
+    i3: 231
+    i4: 220
+    i5: 141
+    i6: 9
+    i7: 228
+    i8: 136
+    i9: 57
+    i10: 201
+    i11: 209
+    i12: 76
+    i13: 38
+    i14: 200
+    i15: 214
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0

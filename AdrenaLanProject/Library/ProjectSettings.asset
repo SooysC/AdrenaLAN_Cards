@@ -292,7 +292,9 @@ PlayerSettings:
     m_Devices:
     - Oculus
     - OpenVR
-  m_BuildTargetEnableVuforiaSettings: []
+  m_BuildTargetEnableVuforiaSettings:
+  - m_BuildTarget: Standalone
+    m_Enabled: 1
   openGLRequireES31: 0
   openGLRequireES31AEP: 0
   m_TemplateCustomTags: {}
@@ -648,9 +650,9 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: aeb74b20-98eb-4717-87fa-d6c171513483
-  projectName: AdrenaLanProject (1)
-  organizationId: mikehxshi
+  cloudProjectId: 219d0355-2509-4fcb-a6e5-e9e712782a04
+  projectName: AdrenaLanProject
+  organizationId: shayan_98
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

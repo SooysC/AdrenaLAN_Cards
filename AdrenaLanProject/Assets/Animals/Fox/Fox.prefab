@@ -309,6 +309,7 @@ GameObject:
   m_Component:
   - component: {fileID: 410602}
   - component: {fileID: 9560576}
+  - component: {fileID: 114595048859972178}
   m_Layer: 0
   m_Name: Fox
   m_TagString: Untagged
@@ -1004,3 +1005,35 @@ Prefab:
   m_SourcePrefab: {fileID: 0}
   m_RootGameObject: {fileID: 172532}
   m_IsPrefabAsset: 1
+--- !u!114 &114595048859972178
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 172532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 240
+    i1: 10
+    i2: 234
+    i3: 52
+    i4: 84
+    i5: 141
+    i6: 6
+    i7: 20
+    i8: 152
+    i9: 250
+    i10: 7
+    i11: 118
+    i12: 140
+    i13: 58
+    i14: 171
+    i15: 11
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0

@@ -24,6 +24,7 @@ GameObject:
   m_Component:
   - component: {fileID: 460732}
   - component: {fileID: 9514212}
+  - component: {fileID: 114388574482493696}
   m_Layer: 0
   m_Name: Squirrel
   m_TagString: Untagged
@@ -855,3 +856,35 @@ Prefab:
   m_SourcePrefab: {fileID: 0}
   m_RootGameObject: {fileID: 103640}
   m_IsPrefabAsset: 1
+--- !u!114 &114388574482493696
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 103640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 81
+    i1: 85
+    i2: 250
+    i3: 253
+    i4: 210
+    i5: 222
+    i6: 82
+    i7: 132
+    i8: 121
+    i9: 188
+    i10: 130
+    i11: 247
+    i12: 120
+    i13: 242
+    i14: 73
+    i15: 101
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0

@@ -219,6 +219,7 @@ GameObject:
   m_Component:
   - component: {fileID: 423406}
   - component: {fileID: 9516516}
+  - component: {fileID: 114853062760100380}
   m_Layer: 0
   m_Name: Hare
   m_TagString: Untagged
@@ -1064,3 +1065,35 @@ Prefab:
   m_SourcePrefab: {fileID: 0}
   m_RootGameObject: {fileID: 146068}
   m_IsPrefabAsset: 1
+--- !u!114 &114853062760100380
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 146068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 142
+    i1: 199
+    i2: 247
+    i3: 219
+    i4: 80
+    i5: 143
+    i6: 53
+    i7: 212
+    i8: 57
+    i9: 142
+    i10: 120
+    i11: 101
+    i12: 52
+    i13: 176
+    i14: 124
+    i15: 202
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0

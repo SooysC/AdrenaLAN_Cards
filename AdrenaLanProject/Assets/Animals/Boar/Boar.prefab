@@ -39,6 +39,7 @@ GameObject:
   m_Component:
   - component: {fileID: 436888}
   - component: {fileID: 9585840}
+  - component: {fileID: 114316916731277482}
   m_Layer: 0
   m_Name: Boar
   m_TagString: Untagged
@@ -734,3 +735,35 @@ Prefab:
   m_SourcePrefab: {fileID: 0}
   m_RootGameObject: {fileID: 119806}
   m_IsPrefabAsset: 1
+--- !u!114 &114316916731277482
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 69
+    i1: 166
+    i2: 143
+    i3: 227
+    i4: 65
+    i5: 12
+    i6: 45
+    i7: 84
+    i8: 216
+    i9: 233
+    i10: 191
+    i11: 238
+    i12: 150
+    i13: 90
+    i14: 238
+    i15: 248
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0

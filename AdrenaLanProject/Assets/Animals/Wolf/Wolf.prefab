@@ -310,6 +310,7 @@ GameObject:
   m_Component:
   - component: {fileID: 495722}
   - component: {fileID: 9587596}
+  - component: {fileID: 114215519274342906}
   m_Layer: 0
   m_Name: Wolf
   m_TagString: Untagged
@@ -854,3 +855,35 @@ Prefab:
   m_SourcePrefab: {fileID: 0}
   m_RootGameObject: {fileID: 181650}
   m_IsPrefabAsset: 1
+--- !u!114 &114215519274342906
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 181650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 86
+    i1: 110
+    i2: 102
+    i3: 213
+    i4: 126
+    i5: 177
+    i6: 107
+    i7: 20
+    i8: 56
+    i9: 193
+    i10: 187
+    i11: 251
+    i12: 6
+    i13: 156
+    i14: 51
+    i15: 124
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
