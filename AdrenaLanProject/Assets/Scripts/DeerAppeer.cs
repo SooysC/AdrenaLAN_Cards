@@ -45,6 +45,7 @@ public class DeerAppeer : MonoBehaviour {
 
 		if (path.magnitude <= 0.1){
 			beast.transform.position = prevPos.Dequeue();
+			beast.GetComponent<Rigidbody>().velocity = new Vector3 (0,0,0); 
 			toOrder.Dequeue();
 			toAttack.Dequeue();
 			attack = toAttack.Count != 0;

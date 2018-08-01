@@ -38,10 +38,10 @@ public class GameTimeline : MonoBehaviour {
                 if (GameGlobals.gameboardTriggered)
                 {
                     Debug.Log("found");
-                    //if (GameObject.Find("Title") != null)
-                        //Destroy(GameObject.Find("Title"));
-                    //else
-                        //Destroy(GameObject.Find("Title(Clone)"));
+                    if (GameObject.Find("Title") != null)
+                        Destroy(GameObject.Find("Title"));
+                    else
+                        Destroy(GameObject.Find("Title(Clone)"));
                     current_state = Game_State.game_setup;
                 }
                 //Debug.Log(GameObject.Find("Title(Clone)"));
@@ -52,9 +52,9 @@ public class GameTimeline : MonoBehaviour {
                 if (!GameGlobals.gameboardTriggered)
                 {
                     Debug.Log("not found");
-                    //Title = Resources.Load<GameObject>("Title");
-                    //if (GameObject.Find("Title(Clone)") == null)
-                        //Instantiate(Title, GameObject.Find("Canvas").transform);
+                    Title = Resources.Load<GameObject>("Title");
+                    if (GameObject.Find("Title(Clone)") == null)
+                        Instantiate(Title, GameObject.Find("Canvas").transform);
                     current_state = Game_State.game_title;
                 }
                 else
